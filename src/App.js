@@ -52,10 +52,7 @@ class App extends Component {
 
         /* for + */
 
-        if ((buttonOn.target.innerText) === "+"){
-          
-       
-        }
+    
 
 
 
@@ -71,17 +68,7 @@ class App extends Component {
   }
  }
  sumApp(){
-   if((document.getElementById('display').value).split("").length===0){
-   this.setState({sum:eval(document.getElementById('display').value)});
-  console.log(this.state.sum);}
-  else {
-    this.setState({sum:(document.getElementById('display').value).split("")})
-    let final = [];
-    for(let i = 0;i<this.state.sum.length;i++){
-      final.push(parseFloat(this.state.sum[i]));
-    }
-    console.log((final));
-  }
+  document.getElementById('display').value = eval(document.getElementById('display').value);
   
  
 
